@@ -2,6 +2,8 @@
 
 For full documentation visit [mkdocs.org](http://mkdocs.org).
 
+[download](files/open_invoice_onigiri_voucher.pdf)
+
 ## Commands
 
 * `mkdocs new [dir-name]` - Create a new project.
