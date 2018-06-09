@@ -1,0 +1,69 @@
+{
+    "docs": [
+        {
+            "location": "/onigiri/", 
+            "text": "Onigiri Voucher (Open Invoice)\n\n\nIntroduction\n\n\nFungsi dari untuk module ini untuk mengkonsolidasi beberapa invoice dan menjadikan satu voucher.\nVoucher harus di print dan mengasih ke team Akun.\n\n\nVoucher ini di generate berdasarkan, satu voucher terdiri dari beberapa customer dengan \nInvoice Date\n yang sama dan \nPayment Term\n yang sama dengan status \nOpen\n.\n\n\n Contoh: \n\n\nPada tanggal 13/06/2017, kita mendapat beberapa invoices seperti data di table bawah:\n\n\n\n\n\n\n\n\nInvoice Date\n\n\nInvoice No\n\n\nPartner\n\n\nPayment Term\n\n\nAmount\n\n\nStatus\n\n\n\n\n\n\n\n\n\n\n13/06/2017\n\n\ninv001\n\n\nPak Agus\n\n\n3 Hari\n\n\nRp 200,000\n\n\nOpen\n\n\n\n\n\n\n13/06/2017\n\n\ninv002\n\n\nBu Nengsi\n\n\n7 Hari\n\n\nRp 100,000\n\n\nOpen\n\n\n\n\n\n\n13/06/2017\n\n\ninv003\n\n\nPT Amira\n\n\n3 Hari\n\n\nRp 1,200,000\n\n\nOpen\n\n\n\n\n\n\n13/06/2017\n\n\ninv004\n\n\nPak Agus\n\n\n3 Hari\n\n\nRp 250,000\n\n\nPaid\n\n\n\n\n\n\n13/06/2017\n\n\ninv005\n\n\nHajianto\n\n\n7 Hari\n\n\nRp 150,000\n\n\nOpen\n\n\n\n\n\n\n13/06/2017\n\n\ninv006\n\n\nSupermarket\n\n\n3 Hari\n\n\nRp 2,000,000\n\n\nPaid\n\n\n\n\n\n\n13/06/2017\n\n\ninv007\n\n\nSekolah\n\n\n10 Hari\n\n\nRp 200,000\n\n\nOpen\n\n\n\n\n\n\n\n\nBerikut \nOnigiri Voucher\n yang bisa di olah dari data atas:\n\n\n\n\ninv001, inv003 bisa di jadikan 1 Voucher karena \nInvoice Date\n, \nPayment Term\n (3 Hari) dan statusnya = \nOpen\n.\n\n\ninv002, inv005 bisa di jadikan 1 Voucher karena \nInvoice Date\n, \nPayment Term\n (7 Hari) dan statusnya = \nOpen\n.\n\n\ninv007 jadikan 1 Voucher karena \nInvoice Date\n, \nPayment Term\n (10 Hari) dan statusnya = \nOpen\n.\n\n\nTetapi, untuk inv004 dan inv006 tidak di buat voucher karena statusnya \nPaid\n artinya invoices itu sudah terbayar dan tidak perlu lagi di buat voucher.\n\n\n\n\nOpen Invoice\n\n\nSebelum bisa membuat voucher, kita perlu memenuhi beberapa settingan di \nCustomer\n, untuk detail bisa lihat di \nSetting untuk customer\n.\nSetelah setting di customer sudah selesai, sekarang lah kita bisa membuat \nOnigiri Voucher / Open Invoice\n.\n\n\nMenu\n\n\n\n\nSales \n Onigiri \n Open Invoice\n\n\n\n\n\n\nMembuat Open Invoice/Onigiri Voucher\n\n\n\n\nTekan \nCreate\n\n\n\n\n\n\n\n\n\n\nMasukan data awal di \n[Header Section]\n \n\n\n\n\n\n\n\n\n\n\nFields\n\n\nRequired\n\n\nDescriptions\n\n\nDefault\n\n\n\n\n\n\n\n\n\n\nJournal\n\n\nYes\n\n\nSudah ada di isikan system di awal. Bila tidak perubahan tidak\n\n\n\n\n\n\n\n\nperlu di ganti\n\n\n\n\n\n\n\n\n\n\n\n\nInvoice Date\n\n\nYes\n\n\nTanggal Invoice\n\n\nTanggal hari ni\n\n\n\n\n\n\nPayment Term\n\n\nYes\n\n\nTermin Pembayaran\n\n\n\n\n\n\n\n\nDue Date\n\n\n-\n\n\nTanggal Jatuh tempo. System akan isikan sesuai \nPayment Term\n yang di pilih\n\n\n\n\n\n\n\n\n\n\n\n\nSetelah data di [Header Section] sudah benar, kita ke \n[Action Section]\n klik button \nOpen Invoice\n\n\nBila data di [Header Section] tidak masalah. System akan isikan Invoices ke \n[Detail Section]\n dan system akan generate juga nomor untuk Voucher yang akan show di [Header Section]\n\n\n\n\nDi bawah adalah image sebagai contoh bila open invoice setelah create:\n\n\n\n\nPrint Onigiri Voucher\n\n\n\n\nTekan \nPrint \n Open Invoice\n\n\n\n\n\n\nBerikut sample \nOnigiri Voucher\n:\n\n\n\n\nDan mao contoh untuk di print \ndownload\n\n\nCancel atau Update Voucher\n\n\nBila terjadi perubahan yang ingin di re-print di onigiri voucher.\n\nOnigiri Voucher\n tidak  bisa membuat update. Jadi, waktu ingin merubah voucher,\nuser perlu melakukan step berikut:\n\n\n\n\nCancel\n\n\n\n\n\n\n\n\nSet Draft\n\n\n\n\n\n\n\n\nOpen Invoice\n\n\n\n\nSetelah \nSet Draft\n, data di [Detail Section] akan terhapus.\nKita bisa klik tombol \nOpen Invoice\n untuk membuat baru kembali\n\n\n\n\nMonitoring Pembayaran\n\n\n\n\nUser can monitor voucher dengan \nStatus\n dan \nDue Date\n\n\nStatus\n\n\nOpen\n\n\nVoucher yang invoice nya ada status yang belum terbayar. \n\n\nClose\n\n\nVoucher itu akan \nClose\n sendiri waktu invoice semua sudah dalam keadaan \nPaid\n.\nIni smua di lakukan oleh system.\n\n\nSetting untuk customer\n\n\nUntuk memakai \nOpen Invoice\n, user perlu buat setting di \nCustomer\n\n\n\n\nMenentukan customer's Onigiri\n\n\n\n\n\n\n\n\nMenentukan Payment Term", 
+            "title": "Onigiri Voucher"
+        }, 
+        {
+            "location": "/onigiri/#onigiri-voucher-open-invoice", 
+            "text": "", 
+            "title": "Onigiri Voucher (Open Invoice)"
+        }, 
+        {
+            "location": "/onigiri/#introduction", 
+            "text": "Fungsi dari untuk module ini untuk mengkonsolidasi beberapa invoice dan menjadikan satu voucher.\nVoucher harus di print dan mengasih ke team Akun.  Voucher ini di generate berdasarkan, satu voucher terdiri dari beberapa customer dengan  Invoice Date  yang sama dan  Payment Term  yang sama dengan status  Open .   Contoh:   Pada tanggal 13/06/2017, kita mendapat beberapa invoices seperti data di table bawah:     Invoice Date  Invoice No  Partner  Payment Term  Amount  Status      13/06/2017  inv001  Pak Agus  3 Hari  Rp 200,000  Open    13/06/2017  inv002  Bu Nengsi  7 Hari  Rp 100,000  Open    13/06/2017  inv003  PT Amira  3 Hari  Rp 1,200,000  Open    13/06/2017  inv004  Pak Agus  3 Hari  Rp 250,000  Paid    13/06/2017  inv005  Hajianto  7 Hari  Rp 150,000  Open    13/06/2017  inv006  Supermarket  3 Hari  Rp 2,000,000  Paid    13/06/2017  inv007  Sekolah  10 Hari  Rp 200,000  Open     Berikut  Onigiri Voucher  yang bisa di olah dari data atas:   inv001, inv003 bisa di jadikan 1 Voucher karena  Invoice Date ,  Payment Term  (3 Hari) dan statusnya =  Open .  inv002, inv005 bisa di jadikan 1 Voucher karena  Invoice Date ,  Payment Term  (7 Hari) dan statusnya =  Open .  inv007 jadikan 1 Voucher karena  Invoice Date ,  Payment Term  (10 Hari) dan statusnya =  Open .  Tetapi, untuk inv004 dan inv006 tidak di buat voucher karena statusnya  Paid  artinya invoices itu sudah terbayar dan tidak perlu lagi di buat voucher.", 
+            "title": "Introduction"
+        }, 
+        {
+            "location": "/onigiri/#open-invoice", 
+            "text": "Sebelum bisa membuat voucher, kita perlu memenuhi beberapa settingan di  Customer , untuk detail bisa lihat di  Setting untuk customer .\nSetelah setting di customer sudah selesai, sekarang lah kita bisa membuat  Onigiri Voucher / Open Invoice .", 
+            "title": "Open Invoice"
+        }, 
+        {
+            "location": "/onigiri/#menu", 
+            "text": "Sales   Onigiri   Open Invoice", 
+            "title": "Menu"
+        }, 
+        {
+            "location": "/onigiri/#membuat-open-invoiceonigiri-voucher", 
+            "text": "Tekan  Create      Masukan data awal di  [Header Section]        Fields  Required  Descriptions  Default      Journal  Yes  Sudah ada di isikan system di awal. Bila tidak perubahan tidak     perlu di ganti       Invoice Date  Yes  Tanggal Invoice  Tanggal hari ni    Payment Term  Yes  Termin Pembayaran     Due Date  -  Tanggal Jatuh tempo. System akan isikan sesuai  Payment Term  yang di pilih       Setelah data di [Header Section] sudah benar, kita ke  [Action Section]  klik button  Open Invoice  Bila data di [Header Section] tidak masalah. System akan isikan Invoices ke  [Detail Section]  dan system akan generate juga nomor untuk Voucher yang akan show di [Header Section]   Di bawah adalah image sebagai contoh bila open invoice setelah create:", 
+            "title": "Membuat Open Invoice/Onigiri Voucher"
+        }, 
+        {
+            "location": "/onigiri/#print-onigiri-voucher", 
+            "text": "Tekan  Print   Open Invoice    Berikut sample  Onigiri Voucher :   Dan mao contoh untuk di print  download", 
+            "title": "Print Onigiri Voucher"
+        }, 
+        {
+            "location": "/onigiri/#cancel-atau-update-voucher", 
+            "text": "Bila terjadi perubahan yang ingin di re-print di onigiri voucher. Onigiri Voucher  tidak  bisa membuat update. Jadi, waktu ingin merubah voucher,\nuser perlu melakukan step berikut:   Cancel     Set Draft     Open Invoice   Setelah  Set Draft , data di [Detail Section] akan terhapus.\nKita bisa klik tombol  Open Invoice  untuk membuat baru kembali", 
+            "title": "Cancel atau Update Voucher"
+        }, 
+        {
+            "location": "/onigiri/#monitoring-pembayaran", 
+            "text": "User can monitor voucher dengan  Status  dan  Due Date", 
+            "title": "Monitoring Pembayaran"
+        }, 
+        {
+            "location": "/onigiri/#status", 
+            "text": "", 
+            "title": "Status"
+        }, 
+        {
+            "location": "/onigiri/#open", 
+            "text": "Voucher yang invoice nya ada status yang belum terbayar.", 
+            "title": "Open"
+        }, 
+        {
+            "location": "/onigiri/#close", 
+            "text": "Voucher itu akan  Close  sendiri waktu invoice semua sudah dalam keadaan  Paid .\nIni smua di lakukan oleh system.", 
+            "title": "Close"
+        }, 
+        {
+            "location": "/onigiri/#setting-untuk-customer", 
+            "text": "Untuk memakai  Open Invoice , user perlu buat setting di  Customer   Menentukan customer's Onigiri     Menentukan Payment Term", 
+            "title": "Setting untuk customer"
+        }
+    ]
+}
