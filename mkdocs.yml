@@ -2,4 +2,5 @@ site_name: PT Ruangan Pedingin Indonesia
 theme: 
     name: material
 pages:
+    - Home: 'index.md'
     - Onigiri Voucher: 'onigiri/index.md'
